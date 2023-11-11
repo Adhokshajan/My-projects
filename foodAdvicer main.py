@@ -42,6 +42,34 @@ def home():
             exit()
 
     elif sad==2:
+        print("1.Morning Breakfast \n 2.Afternoon lunch\n 3.Snacks\n 4.Dinner\n 5.exit()")
+        c=int(input("enter your option:  "))
+        if c==1:
+            x=h.morning()
+            print(x)
+        elif c==2:
+            print("1.Curry\n 2.Sambar\n 3.Rasam")
+
+            sad=int(input("Enter your option:  "))
+            if sad==1:
+                x=h.curry()
+                print(x)
+            elif sad==2:
+                x=h.sambar()
+                print(x)
+            elif sad==3:
+                x=h.rasam()
+                print(x)
+            else:
+                home()
+        elif c==3:
+            x=h.snacks()
+            print(x)
+        elif c==4:
+            x=h.dinnner()
+            print(x)
+        elif c==5:
+            exit()
 
 
 
